@@ -1,0 +1,9 @@
+## Basics of Typescript
+
+-- compile to JS, tsc <filename>
+-- add -w to watch for changes
+-- initialize ts, tsc --init
+-- rootDir -> find ts files
+-- outDir -> output of ts files
+-- add include src to compile only src ts files
+-- prevent compiling if error in ts -> "noEmitOnError": true
