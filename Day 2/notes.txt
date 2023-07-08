@@ -1,0 +1,14 @@
+## Basic Data Types
+
+-- Implicit declaration --
+    let name = 'Anim'
+
+-- Explicit declaration --
+    let name: string
+
+-- Data Types --
+    boolean
+    number
+    string
+    any
+    union types, => let Random: string | number
