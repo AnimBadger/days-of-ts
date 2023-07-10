@@ -1,0 +1,26 @@
+## Objects, Arrays, Enums and Tuples
+
+-- Arrays
+    using the union way of declaring 
+    let myArray: (string | number)[]
+    multiple data types can be added, declaring without type default to any
+    an array with type string can not add other data types
+
+-- Tuples
+    strict with position of data types and length
+    let myTuple: (string, number) = ['Sterling', 34] 
+
+-- Objects
+    Objects can be Arrays
+    can be declared by. let myObject: object or let myObject = {}
+    when using {} types are fixed. myObject = {
+        'data': 'stephen',
+        'age': 34
+    }
+    cant do this myObject.age = 'asf'
+
+    using `type` will let you declare the data type and properties you want for an object
+    can use interface and works the same but does not require `=` when declaring
+    `?` to make optional
+
+-- Enums
