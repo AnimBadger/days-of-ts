@@ -1,0 +1,12 @@
+## Type aliases, functions, literal types and never types
+
+-- Type aliases
+    using types to replace data type declaration
+
+-- literal types
+    specific assignment
+    can use union to give what could be assigned
+    `let name: 'Anim' | 'Stephen'` => name could be assigned to one of them only
+
+-- functions
+    notes in ./src/main.ts
