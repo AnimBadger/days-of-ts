@@ -1,0 +1,4 @@
+## Type Assertion and Type Casting
+## they are used interchangeably
+
+-- notes in ./src/main.ts
