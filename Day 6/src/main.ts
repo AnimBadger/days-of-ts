@@ -26,4 +26,25 @@ class WebDeveloper extends Coder{
         }
 }
 
+interface Musician{
+    name: string
+    instrument: string
+    play(action: string): string
+}
+
+class Guitarist implements Musician{
+    name: string
+    instrument: string
+
+    constructor(name: string, instrument:string){
+        this.name = name
+        this.instrument = instrument
+    }
+    play(action: string): string {
+        return `${this.name} ${action} ${this.instrument}`
+    }
+}
+
 const Anim = new Coder('Anim', 'Rock', 12, 'Typescript')
+const Page = new Guitarist('Page', 'Guitar')
+console.log(Page.play('play'))

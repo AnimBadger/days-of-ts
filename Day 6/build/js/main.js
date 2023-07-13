@@ -22,4 +22,15 @@ class WebDeveloper extends Coder {
         this.computer = computer;
     }
 }
+class Guitarist {
+    constructor(name, instrument) {
+        this.name = name;
+        this.instrument = instrument;
+    }
+    play(action) {
+        return `${this.name} ${action} ${this.instrument}`;
+    }
+}
 const Anim = new Coder('Anim', 'Rock', 12, 'Typescript');
+const Page = new Guitarist('Page', 'Guitar');
+console.log(Page.play('play'));
