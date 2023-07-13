@@ -34,3 +34,18 @@ class Guitarist {
 const Anim = new Coder('Anim', 'Rock', 12, 'Typescript');
 const Page = new Guitarist('Page', 'Guitar');
 console.log(Page.play('play'));
+class Peeps {
+    static getCount() {
+        return Peeps.count;
+    }
+    constructor(name) {
+        this.name = name;
+        this.name = name;
+        this.id = ++Peeps.count;
+    }
+}
+Peeps.count = 0;
+const Amy = new Peeps('Amy');
+const John = new Peeps('John');
+const Silly = new Peeps('Silly');
+console.log(Peeps.count);

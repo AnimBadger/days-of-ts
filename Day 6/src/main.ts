@@ -48,3 +48,23 @@ class Guitarist implements Musician{
 const Anim = new Coder('Anim', 'Rock', 12, 'Typescript')
 const Page = new Guitarist('Page', 'Guitar')
 console.log(Page.play('play'))
+
+class Peeps{
+    static count: number = 0
+
+    static getCount(): number{
+        return Peeps.count
+    }
+
+    public id: number
+
+    constructor(public name: string){
+        this.name = name
+        this.id = ++Peeps.count
+    }
+}
+
+const Amy = new Peeps('Amy')
+const John = new Peeps('John')
+const Silly = new Peeps('Silly')
+console.log(Peeps.count)
