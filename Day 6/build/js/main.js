@@ -49,3 +49,19 @@ const Amy = new Peeps('Amy');
 const John = new Peeps('John');
 const Silly = new Peeps('Silly');
 console.log(Peeps.count);
+class Bands {
+    constructor() {
+        this.dataState = [];
+    }
+    get data() {
+        return this.dataState;
+    }
+    set data(value) {
+        if (Array.isArray(value) && value.every(element => typeof element === 'string')) {
+            this.dataState = value;
+            return;
+        }
+        else
+            throw new Error('Invalid params');
+    }
+}

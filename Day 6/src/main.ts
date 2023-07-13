@@ -68,3 +68,23 @@ const Amy = new Peeps('Amy')
 const John = new Peeps('John')
 const Silly = new Peeps('Silly')
 console.log(Peeps.count)
+
+
+class Bands{
+    private dataState: string[]
+
+    constructor() {
+        this.dataState = []
+    }
+
+    public get data(): string[]{
+        return this.dataState
+    }
+
+    public set data(value: string[]) {
+        if (Array.isArray(value) && value.every(element => typeof element === 'string')){
+            this.dataState = value
+            return
+        } else throw new Error('Invalid params')
+    }
+}
