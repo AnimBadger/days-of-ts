@@ -1,0 +1,6 @@
+// Index signatures
+
+    -key-
+-- [Index: string]: number
+    index signature. all keys are strings and values are numbers
+    can make signature readonly by adding readonly.
